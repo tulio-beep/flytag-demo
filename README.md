@@ -1,5 +1,7 @@
 # FlyTag-Demo
 
+APLICAÇÃO ELECTRON.JS
+
 ## Propósito
 
 O FlyTag-Demo é uma aplicação desenvolvida exclusivamente para fins de demonstração. Por se tratar de um protótipo, não inclui requisições reais com APIs ou integração com banco de dados. Em vez disso, a conexão é simulada através de um arquivo `.json`.
