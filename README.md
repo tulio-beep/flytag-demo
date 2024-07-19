@@ -14,6 +14,10 @@ O FlyTag-Demo é uma aplicação desenvolvida exclusivamente para fins de demons
 
 Para compilar o FlyTag-Demo, siga os seguintes passos:
 
+0. Para instalar as bibliotecas:
+      ```bash
+   npm install
+
 1. Execute o comando de compilação:
    ```bash
    npm run package
