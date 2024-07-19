@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyTag</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <div class="titlebar">
+        <div>
+        <span>FlyTag Demo</span>
+        </div>
+        <div>
+            <button id="minimize">_</button>
+            <button id="maximize">❒</button>
+            <button id="close">✖</button>
+        </div>
+    </div>
+    <div class="content">
+    <div class="reading">
+        <label for="filtro">Filtrar</label>
+        <input id="filtro" oninput="highlightClasses()">
+        <div id="reading_content">
+            <p>Console:</p>
+            <p id="console"></p>
+        </div>
+    </div>
+    <div class="table">
+        <table>
+            <tr>
+                <th></th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td id="A1"></td>
+                <td id="B1"></td>
+                <td id="C1"></td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td id="A2"></td>
+                <td id="B2"></td>
+                <td id="C2"></td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td id="A3"></td>
+                <td id="B3"></td>
+                <td id="C3"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="cont">
+        <p>Contagem dos itens:</p>
+        <div id="cont"></div>
+    </div>
+    </div>
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/window.js"></script>
+</body>
+</html>
+

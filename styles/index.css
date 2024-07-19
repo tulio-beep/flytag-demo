@@ -1,0 +1,122 @@
+body {
+    -webkit-user-select: none; /* Desativa seleção para navegadores WebKit (Chrome, Safari, etc.) */
+    -moz-user-select: none; /* Desativa seleção para navegadores Firefox */
+    -ms-user-select: none; /* Desativa seleção para navegadores Internet Explorer/Edge */
+    user-select: none; /* Desativa seleção para navegadores que suportam a propriedade user-select */
+    background-color: #ecf6ff;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.content{
+    display:flex;
+}
+
+@font-face {
+    font-family: 'NotoSans';
+    src: url('./fonts/NotoSansJP.ttf') format('truetype');
+    /* Caminho para a fonte */
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'NotoSans';
+}
+
+th{
+    font-size: 24pt;
+}
+
+td{
+    width: 150px;
+    height: 150px;
+    border: #333;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #fff;
+    text-align: center;
+}
+
+.titlebar {
+    font-size: 24px;
+    background: #2d2846;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-app-region: drag;
+    height: 6vh;
+}
+
+.titlebar div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titlebar div>* {
+    padding-right: 10px;
+}
+
+
+.titlebar button {
+    -webkit-app-region: no-drag;
+    background: #fff;
+    border: none;
+    padding: 5px 10px;
+    width: 75px;
+    height: 30px;
+    cursor: pointer;
+    border-style: solid;
+    border-color: #333;
+    border-width: 1px;
+}
+
+.titlebar button:hover {
+    background: #00c9fc;
+    color: #333;
+}
+
+.reading{
+    background-color: #2d2846;
+    color: #fff;
+    margin: 5px;
+    padding: 5px;
+    width: 300px;
+    word-wrap: break-word;
+    height: calc(100vh - 100px);
+}
+
+#reading_content{
+    flex-grow: 1;
+    overflow: auto;
+    max-height: calc(100vh - 175px);
+}
+
+.table {
+    flex-grow: 1;
+    overflow: auto;
+    max-height: calc(100vh - 100px);
+}
+
+.cont{
+    margin: 5px;
+    padding: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #333;
+    width: 400px;
+    overflow: auto;
+    max-height: calc(100vh - 100px);
+}
+
+#cont p{
+    margin: 0;
+}
+
+.highlight {
+    background-color: yellow;
+  }
